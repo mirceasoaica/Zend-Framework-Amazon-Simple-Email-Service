@@ -1,8 +1,7 @@
-Amazon Simple Email Service class for Zend Framework
-
-Usage:
+##Usage
 
 All methods return TRUE on success and FALSE on failure.
+
 Method getErrorMessage() will return last error message from Amazon.
 
 
@@ -34,7 +33,8 @@ $ses->addCc('another@cc.com');
 $ses->setReplyTo('reply@to.com);
 $ses->addReplyTo('another@reply.com);
 
-// setTo, addTo, setBcc, addBcc, setCc, addCc, setReplyTo, addReplyTo also takes as parameter an array of emails : array('email1@email.com', 'email2@email.com', 'email2@email.com');
+// setTo, addTo, setBcc, addBcc, setCc, addCc, setReplyTo, addReplyTo also take as parameter an array of emails : 
+// array('email1@email.com', 'email2@email.com', 'email2@email.com');
 
 $ses->setReplyPath('some_reply@path.com');
 
